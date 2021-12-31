@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(35, 36, 20);
+    background-color: rgb(0, 0, 0);
   }
   
   h1 {
@@ -11,19 +11,18 @@ body {
   p1{
     color: blueviolet;
     bottom: 0;
+    font-size: 20px;
 
   }
   html {
     text-align: center;
   }
   .topnav {
-    background:rgb(68, 68, 68);
     font-size: 35px;
 
   }
 
   .footer {
-    background:rgb(68, 68, 68);
     font-size: 20px;
     text-align: center;
     bottom: 0;
@@ -37,4 +36,24 @@ img {
 
 a{
   color: blueviolet;
+}
+
+.lightgallery1 a {
+  height:auto;
+}
+
+.lightgallery1 a img {
+  margin: 4px 4px 4px 4px;
+    max-width:20%;
+  height:auto;
+  background-color: blueviolet;
+}
+
+button{
+  background-color: blueviolet;
+  color: rgb(0, 0, 0);
+  padding: 15px 52px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
 }
