@@ -7,12 +7,6 @@ body {
     font-size:45px;
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    body {
-      background: #999;
-      width: 100%;
-    }
-  }
   p1{
     color: blueviolet;
     bottom: 0;
@@ -61,4 +55,34 @@ button{
   text-align: center;
   display: inline-block;
   font-size: 20px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    background: rgb(0, 0, 0);
+    width: 100%;
+  }
+  .lightgallery1 a img{
+    margin: 4px 4px 4px 4px;
+    max-width:40%;
+  height:auto;
+  background-color: blueviolet;
+  }
+
+  button{
+    background-color: blueviolet;
+    color: rgb(0, 0, 0);
+    padding: 30px 104px;
+    text-align: center;
+    display: inline-block;
+    font-size: 40px;
+  }
+  p1{
+    color: blueviolet;
+    bottom: 0;
+    font-size: 40px;
+  }
+  .topnav {
+    font-size: 70px;
+  }
 }
