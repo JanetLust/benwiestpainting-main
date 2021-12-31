@@ -76,6 +76,7 @@ button{
     text-align: center;
     display: inline-block;
     font-size: 40px;
+    border: none;
   }
   p1{
     color: blueviolet;
@@ -83,6 +84,6 @@ button{
     font-size: 40px;
   }
   .topnav {
-    font-size: 70px;
+    font-size: 50px;
   }
 }
