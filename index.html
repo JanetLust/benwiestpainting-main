@@ -21,7 +21,7 @@
     <title>
         Ben Wiest Painting
     </title>
-    <link rel="icon" href="images/Batch2/IMG-0798-min.jpg">
+    <link rel="icon" href="images/IMG-0798-min.jpg">
 
     <script>
         window.onload = function () {
@@ -33,6 +33,7 @@
 
     </script>
 
+<link href="lightbox2-2.11.3/src/css/lightbox.css" rel="stylesheet" />
 
 
 </head>
@@ -50,7 +51,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <div class="lightgallery1"></div>
-
 <button id="load">Load More</button>
 <script>
     var links = [
@@ -81,8 +81,10 @@ var $gallery  = $(".lightgallery1").first();
           var src   = links.pop();
           var $link = $("<a>");
           var $img  = $("<img>");
+          
     
           $img.attr("src", src);
+          $link.attr("data-lightbox", 'image');
           $link.attr("href", src).addClass("item");
           
           $link.append($img);
@@ -105,6 +107,7 @@ var $gallery  = $(".lightgallery1").first();
     <div class="footer">
         <p1>Everything on this site is protected by copyright</p1>
     </div>
+    <script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
 </body>
 
 </html>
