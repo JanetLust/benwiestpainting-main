@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="foo">
 
 <head>
 
@@ -42,6 +42,7 @@
   <a href="aboutContact.html">About & Contact</a>
   <a href="donate.html">Donate</a>
 </div>
+
 </header>
 
 <body>
@@ -49,6 +50,36 @@
     ~Greetings from Ben Wiest's Website~<br>
     ~Phosphenes-Pareidolia-Hypnagogic Imagery~<br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      var count = false;
+      function myFunction() {
+        if (count == false) {
+          document.getElementById('foo').setAttribute("class", "style1");
+          count = true;
+          count1=false;
+        } else {
+          document.getElementById('foo').setAttribute("class", "style2");
+          count = false;
+          count1 = false;
+        }
+
+      }
+
+      var count1 = false;
+      function myFunction1() {
+        if (count1 == false) {
+          document.getElementById('foo').setAttribute("class", "style3");
+          count1 = true;
+          count=false;
+        } else {
+          document.getElementById('foo').setAttribute("class", "style2");
+          count = false;
+          count1 = false;
+        }
+
+      }
+    </script>
+
 
     <div class="lightgallery1"></div>
     <button id="load">Load More</button>
@@ -105,6 +136,8 @@
   </h1>
   <br>
   <div class="footer">
+    <button class="redroom" onclick="myFunction()">Red Room</button>
+<button class="redroom" onclick="myFunction1()">Invert</button> <br>
     <p1>Everything on this site is protected by copyright</p1>
   </div>
   <script src="lightbox2-2.11.3/src/js/lightbox.js"></script>
