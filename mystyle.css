@@ -1,14 +1,14 @@
 body {
-  background: rgb(28, 4, 94);
+  background: rgb(227, 253, 154);
 }
   
   h1 {
-    color: blueviolet;
+    color: rgb(113, 212, 31);
     font-size:45px;
   }
 
   p1{
-    color: blueviolet;
+    color: rgb(113, 212, 31);
     bottom: 0;
     font-size: 20px;
 
@@ -28,9 +28,9 @@ body {
 
 }
 .redroom{
-
-  background-color: blueviolet;
-  color: rgb(0, 0, 0);
+  border-color: rgb(227, 253, 154);;
+  background-color: rgb(113, 212, 31);
+  color: rgb(227, 253, 154);
   padding: 8px 10px;
   text-align: center;
   display: inline-block;
@@ -51,11 +51,11 @@ body {
 img {
   max-width:20%;
   height:auto;
-  background-color: blueviolet;
+  background-color: rgb(113, 212, 31);
 }
 
 a{
-  color: blueviolet;
+  color: rgb(113, 212, 31);
 }
 
 .lightgallery1 a {
@@ -66,12 +66,14 @@ a{
   margin: 4px 4px 4px 4px;
     max-width:20%;
   height:auto;
-  background-color: blueviolet;
+  background-color: rgb(113, 212, 31);
 }
 
 button{
-  background-color: blueviolet;
-  color: rgb(0, 0, 0);
+  border-color: rgb(227, 253, 154);;
+
+  background-color: rgb(113, 212, 31);
+  color: rgb(227, 253, 154);
   padding: 15px 52px;
   text-align: center;
   display: inline-block;
@@ -80,19 +82,21 @@ button{
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   body {
-    background: rgb(28, 4, 94);
+    background: rgb(227, 253, 154);
     width: 100%;
   }
   .lightgallery1 a img{
     margin: 4px 4px 4px 4px;
     max-width:40%;
   height:auto;
-  background-color: blueviolet;
+  background-color: rgb(113, 212, 31);
   }
 
   button{
-    background-color: blueviolet;
-    color: rgb(0, 0, 0);
+    border: none;
+
+    background-color: rgb(113, 212, 31);
+    color: rgb(227, 253, 154);
     padding: 30px 104px;
     text-align: center;
     display: inline-block;
@@ -100,7 +104,7 @@ button{
     border: none;
   }
   p1{
-    color: blueviolet;
+    color: rgb(113, 212, 31);
     bottom: 0;
     font-size: 40px;
   }
