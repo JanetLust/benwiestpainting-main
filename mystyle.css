@@ -1,14 +1,14 @@
 body {
-  background: rgb(227, 253, 154);
+  background: rgb(34, 34, 34);
 }
   
   h1 {
-    color: rgb(113, 212, 31);
+    color: rgb(212, 31, 85);
     font-size:45px;
   }
 
   p1{
-    color: rgb(113, 212, 31);
+    color: rgb(212, 31, 85);
     bottom: 0;
     font-size: 20px;
 
@@ -28,9 +28,9 @@ body {
 
 }
 .redroom{
-  border-color: rgb(227, 253, 154);;
-  background-color: rgb(113, 212, 31);
-  color: rgb(227, 253, 154);
+  border-color: rgb(34, 34, 34);
+  background-color: rgb(212, 31, 85);
+  color: rgb(34, 34, 34);
   padding: 8px 10px;
   text-align: center;
   display: inline-block;
@@ -51,11 +51,11 @@ body {
 img {
   max-width:20%;
   height:auto;
-  background-color: rgb(113, 212, 31);
+  background-color: rgb(212, 31, 85);
 }
 
 a{
-  color: rgb(113, 212, 31);
+  color: rgb(212, 31, 85);
 }
 
 .lightgallery1 a {
@@ -66,14 +66,14 @@ a{
   margin: 4px 4px 4px 4px;
     max-width:20%;
   height:auto;
-  background-color: rgb(113, 212, 31);
+  background-color: rgb(212, 31, 85);
 }
 
 button{
-  border-color: rgb(227, 253, 154);;
+  border-color: rgb(34, 34, 34);
 
-  background-color: rgb(113, 212, 31);
-  color: rgb(227, 253, 154);
+  background-color: rgb(212, 31, 85);
+  color: rgb(34, 34, 34);
   padding: 15px 52px;
   text-align: center;
   display: inline-block;
@@ -82,19 +82,19 @@ button{
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   body {
-    background: rgb(227, 253, 154);
+    background: rgb(34, 34, 34);
     width: 100%;
   }
   .lightgallery1 a img{
     margin: 4px 4px 4px 4px;
     max-width:40%;
   height:auto;
-  background-color: rgb(113, 212, 31);
+  background-color: rgb(212, 31, 85);
   }
   .redroom{
-    border-color: rgb(227, 253, 154);;
-    background-color: rgb(113, 212, 31);
-    color: rgb(227, 253, 154);
+    border-color: rgb(34, 34, 34);
+    background-color: rgb(212, 31, 85);
+    color: rgb(34, 34, 34);
     padding: 20px 80px;
     text-align: center;
     display: inline-block;
@@ -102,8 +102,8 @@ button{
   }
   button{
 
-    background-color: rgb(113, 212, 31);
-    color: rgb(227, 253, 154);
+    background-color: rgb(212, 31, 85);
+    color: rgb(34, 34, 34);
     padding: 30px 104px;
     text-align: center;
     display: inline-block;
@@ -111,7 +111,7 @@ button{
     border: none;
   }
   p1{
-    color: rgb(113, 212, 31);
+    color: rgb(212, 31, 85);
     bottom: 0;
     font-size: 40px;
   }
