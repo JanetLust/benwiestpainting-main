@@ -28,13 +28,14 @@
       const hash = window.location.hash;// location object has page url components
       // defaults for no match
 
-      function everyTime() {
+      //timer loader:
+ /*     function everyTime() {
         loadMore();
         if (!links.length) {
         clearInterval(myInterval);
     }
       }
-      var myInterval = setInterval(everyTime, 4500);
+      var myInterval = setInterval(everyTime, 4500); */
   }
 
   </script>
@@ -112,7 +113,7 @@
       var $loadMore = $("#load");
 
       function loadMore(e) {
-
+console.log('load more begins')
         for (var i = 0; i < 8; i++) {
 
           if (links.length) {
@@ -135,6 +136,11 @@
 
         }
 
+        if (links.length) {
+          console.log('load more happening inside')
+        loadMore();
+        }
+        console.log('load more ends')
       }
 
       $loadMore.on("click", loadMore);
