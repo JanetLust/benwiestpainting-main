@@ -82,7 +82,7 @@ button{
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   body {
-    background: rgb(34, 34, 34);
+    background: linear-gradient(to right, #ff0080, #ff8c00, #ffff00, #00ff00, #0080ff, #800080);
     width: 100%;
   }
   .lightgallery1 a img{
