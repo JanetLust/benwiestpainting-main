@@ -1,5 +1,5 @@
 body {
-  background: rgb(34, 34, 34);
+  background: linear-gradient(to right, #ff0080, #ff8c00, #ffff00, #00ff00, #0080ff, #800080);
 }
   
   h1 {
