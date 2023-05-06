@@ -20,7 +20,72 @@
 
 <body>
     <h1>PayPal me <a target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=F53CRZUCNGKAQ&currency_code=USD&source=url">here</a></h1>
+<canvas id="canvas"></canvas>
+  <script>
+      const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const goldenRatio = 1.61803398875;
 
+  function drawComplexChrysanthemumSpiral(scale, offsetX, offsetY, color) {
+    ctx.save();
+    ctx.translate(offsetX, offsetY);
+
+    for (let i = 0; i < 1500; i++) {
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1;
+
+      const angle = i * goldenRatio * Math.PI;
+
+      const x1 = Math.cos(angle) * scale * i;
+      const y1 = Math.sin(angle) * scale * i;
+
+      const x2 = Math.cos(angle + 0.001) * scale * (i + 1);
+      const y2 = Math.sin(angle + 0.001) * scale * (i + 1);
+
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+
+      ctx.stroke();
+    }
+
+    for (let i = 0; i < 1500; i++) {
+      ctx.beginPath();
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1;
+
+      const angle = -i * goldenRatio * Math.PI;
+
+      const x1 = Math.cos(angle) * scale * i;
+      const y1 = Math.sin(angle) * scale * i;
+
+      const x2 = Math.cos(angle - 0.001) * scale * (i + 1);
+      const y2 = Math.sin(angle - 0.001) * scale * (i + 1);
+
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+
+      ctx.stroke();
+    }
+
+    ctx.restore();
+  }
+
+  function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const scale = canvas.width / 10000;
+    const offsetX = canvas.width / 2;
+    const offsetY = canvas.height / 2;
+
+    drawComplexChrysanthemumSpiral(scale, offsetX, offsetY, 'rgb(128, 0, 128)');
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+  </script>
 </body>
 
 </html>
